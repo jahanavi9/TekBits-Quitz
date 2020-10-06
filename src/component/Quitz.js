@@ -11,8 +11,6 @@ class Quitz extends Component {
             answer: String,
             optiona: String,
             optionb: String
-
-
         };
     }
     manageScore(e) {
@@ -38,8 +36,6 @@ class Quitz extends Component {
         axios.get('https://spreadsheets.google.com/feeds/list/1nHaaxjJnAR266tqjw8NBLeonHeCoMrX0lrKH7E2Grk8/od6/public/values?alt=json')
             .then(
                 response => {
-
-
                     const i = Math.floor(Math.random() * 6);
                     console.log(response.data)
                     console.log(response.data.feed.entry[i])
@@ -47,56 +43,33 @@ class Quitz extends Component {
                     console.log(response.data.feed.entry[i].gsx$answer.$t)
                     console.log(response.data.feed.entry.length)
 
-
                     this.setState({
-
-                        question: response.data.feed.entry[i].gsx$question.$t
-
-                    })
+                    question: response.data.feed.entry[i].gsx$question.$t
+                })
                     this.setState({
-
-                        answer: response.data.feed.entry[i].gsx$answer.$t
-
-                    })
-
-
+                         answer: response.data.feed.entry[i].gsx$answer.$t
+                         })
                     this.setState({
-
-                        optiona: response.data.feed.entry[i].gsx$optiona.$t
-
-                    })
+                         optiona: response.data.feed.entry[i].gsx$optiona.$t
+                         })
                     this.setState({
-
-                        optionb: response.data.feed.entry[i].gsx$optionb.$t
-
-                    })
-
-
-                }
-
+                         optionb: response.data.feed.entry[i].gsx$optionb.$t
+                         })
+                 }
             )
-    }
+         }
 
-
-
-    render() {
-
-        return (
+         render() {
+          return (
             <div>
-                
-
                 <h1>score:{this.state.score}</h1>
-
                 <h2>Question:{this.state.question}</h2>
                 <h5><button onClick={this.manageScore.bind(this)} value={this.state.optiona}>{this.state.optiona}</button></h5>
                 <h5><button onClick={this.manageScore.bind(this)} value={this.state.optionb}>{this.state.optionb}</button></h5>
-               
-               <button onClick={this.getapidata.bind(this)}>Next</button>
-                
-            </div>
+                <button onClick={this.getapidata.bind(this)}>Next</button>
+             </div>
         );
     }
 }
-
 
 export default Quitz;
