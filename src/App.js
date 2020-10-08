@@ -8,7 +8,7 @@ import Quitz from './component/Quitz';
 function App() {
   return (
     <div className="App">
-      <Header projectname="TekBits"></Header>
+      <Header projectname="TekBitS Quitz"></Header>
       <Quitz></Quitz>
       <Footer></Footer>
     </div>
