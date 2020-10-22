@@ -37,35 +37,22 @@
   }
 }
 .ux{
-  height: 500px;
-   border:solid;
+  height: 100%;
+  border:solid;
    border-width:10px 15px 0px 15px;
-   border-color:rgb(84, 130, 230) rgb(211, 126, 70) red  rgb(211, 126, 70);
+   border-color:rgb(84, 130, 230) rgb(211, 126, 70) white  rgb(211, 126, 70);
    margin-top:20px;
-   
    margin-left: 20px;
    margin-right: 20px;
    margin-bottom: 20px;
   
  }
  .bottom{
-   
-   height:100px;
-   width:100px;
-   border:hidden solid;
-   display:flex;
-   position: absolute;
-   bottom:90px;
-   left:100px;
-   
-    
+  height:100px;
+  width:500px;
+  }
  
-   
- }
- .bottom span{
-   align-self:flex-end;
-    
- }
+ 
  
    .circle{
      height:80px;

@@ -7,11 +7,8 @@ function Footer(props) {
         <div className="rec1"></div>
         <div className="rec2"></div>
         <div className="rec3"></div>
-        
-
         <div className="bottom">
-
-        <span><h4>Developers behind the code<br></br>priya,sowmya,jahnavi,chaitanya</h4></span></div>
+        <h3>Developers behind the code</h3><h4> priya,sowmya,jahnavi,chaitanya</h4></div>
         </div>
         
     );
