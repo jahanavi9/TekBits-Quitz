@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+.ux{
+  height: 500px;
+   border:solid;
+   border-width:10px 15px 0px 15px;
+   border-color:rgb(84, 130, 230) rgb(211, 126, 70) red  rgb(211, 126, 70);
+   margin-top:20px;
+   
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+  
+ }
+ .bottom{
+   
+   height:100px;
+   width:100px;
+   border:hidden solid;
+   display:flex;
+   position: absolute;
+   bottom:90px;
+   left:100px;
+   
+    
+ 
+   
+ }
+ .bottom span{
+   align-self:flex-end;
+    
+ }
+ 
+   .circle{
+     height:80px;
+     width:80px;
+     border-radius: 40px;
+      background-color:rgb(84, 130, 230);
+      position: absolute;
+      left:1250px;
+      bottom:150px;
+ 
+   }
+   .t{
+     
+       font-size: 20px;
+       font-style: italic;
+       position:absolute;
+       bottom: -3px;
+       left:15px;
+       
+       color:white;
+       
+     }
+     .rec1{
+       height:10px;
+       width:700px;
+       position: absolute;
+      left:700px;
+      bottom:100px;background-color:  rgba(182, 176, 176, 0.952);
+ 
+     }
+     
+     .rec2{
+       height:10px;
+       width:700px;
+       position: absolute;
+      left:700px;
+      bottom:110px;
+      background-color: rgb(84, 130, 230); 
+ 
+         }
+         .rec3{
+           height:10px;
+           width:500px;
+           position: absolute;
+          left:70px;
+          bottom:150px;
+          background-color:rgba(182, 176, 176, 0.514);
+     
+             }
+    
+             .greenButton{
+              background-color: green;
+            }
+            
+            .redButton{
+              background-color:red;
+            }
+            
+            .transparentButton{
+              background-color:transparent;
+            }
