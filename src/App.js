@@ -7,10 +7,13 @@ import Quitz from './component/Quitz';
 
 function App() {
   return (
-    <div className="App">
-      <Header projectname="TekBitS Quitz"></Header>
+
+    <div className="ux">
+     <div className="App"> 
+      <Header projectname="React Quitz"></Header>
       <Quitz></Quitz>
       <Footer></Footer>
+      </div>
     </div>
   );
 }
